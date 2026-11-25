@@ -1,0 +1,13 @@
+[package]
+name = "halmi-cpp"
+description = "C++ language adapter for halmi: hand-lexed, zero-dependency, single-pass metrics"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+halmi-core = { path = "../halmi-core" }
+halmi-lex = { path = "../halmi-lex" }

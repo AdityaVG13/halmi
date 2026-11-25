@@ -1,0 +1,13 @@
+[package]
+name = "halmi-script"
+description = "JavaScript/TypeScript adapter for halmi: one lexer, one structure pass, dialect-aware"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+halmi-core = { path = "../halmi-core" }
+halmi-lex = { path = "../halmi-lex" }

@@ -1,0 +1,15 @@
+[package]
+name = "halmi-rs"
+description = "Rust language adapter for halmi: single-pass AST metrics collection"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+halmi-core = { path = "../halmi-core" }
+syn = { workspace = true }
+proc-macro2 = { workspace = true }
+quote = { workspace = true }

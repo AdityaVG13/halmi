@@ -1,0 +1,35 @@
+[package]
+name = "halmi-cli"
+description = "Agent-native Halstead + Maintainability Index analyzer binary"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme.workspace = true
+
+[[bin]]
+name = "halmi"
+path = "src/main.rs"
+
+[dependencies]
+halmi-core = { path = "../halmi-core" }
+halmi-go = { path = "../halmi-go" }
+halmi-python = { path = "../halmi-python" }
+halmi-script = { path = "../halmi-script" }
+halmi-swift = { path = "../halmi-swift" }
+halmi-zig = { path = "../halmi-zig" }
+halmi-c = { path = "../halmi-c" }
+halmi-cpp = { path = "../halmi-cpp" }
+halmi-java = { path = "../halmi-java" }
+halmi-cs = { path = "../halmi-cs" }
+halmi-kotlin = { path = "../halmi-kotlin" }
+halmi-php = { path = "../halmi-php" }
+halmi-ruby = { path = "../halmi-ruby" }
+halmi-lua = { path = "../halmi-lua" }
+halmi-rs = { path = "../halmi-rs" }
+
+[dev-dependencies]
+serde_json = { workspace = true } # test-only JSON validation
+tempfile = { workspace = true }

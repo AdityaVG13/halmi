@@ -1,0 +1,8 @@
+/target
+/docs/internal/
+.DS_Store
+.prime/
+.forge/
+AGENTS.md
+CLAUDE.md
+__pycache__/

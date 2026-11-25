@@ -1,0 +1,17 @@
+[package]
+name = "halmi-core"
+description = "Halstead metrics, Maintainability Index, and joint function ranking"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme.workspace = true
+
+[dependencies]
+# none: halmi-core is dependency-free by design (see CONTRACT.md)
+
+[dev-dependencies]
+# test-only: independently validates the hand-rolled JSON codec
+serde_json = { workspace = true }

@@ -1,0 +1,12 @@
+[package]
+name = "halmi-flat"
+description = "Minimal reference language adapter for halmi: flat-script, proving the LanguageAdapter port"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+halmi-core = { path = "../halmi-core" }

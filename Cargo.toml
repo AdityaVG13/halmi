@@ -1,0 +1,41 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/halmi-core",
+    "crates/halmi-rs",
+    "crates/halmi-cli",
+    "crates/halmi-flat",
+    "crates/halmi-python",
+    "crates/halmi-go",
+    "crates/halmi-script",
+    "crates/halmi-lex",
+    "crates/halmi-swift",
+    "crates/halmi-zig",
+    "crates/halmi-c",
+    "crates/halmi-cpp",
+    "crates/halmi-java",
+    "crates/halmi-cs",
+    "crates/halmi-kotlin",
+    "crates/halmi-php",
+    "crates/halmi-ruby",
+    "crates/halmi-lua",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/AdityaVG13/halmi"
+readme = "README.md"
+keywords = ["halstead", "maintainability", "code-metrics", "static-analysis", "complexity"]
+categories = ["command-line-utilities", "development-tools"]
+
+[workspace.dependencies]
+serde_json = "1" # dev-only: independent validation of the hand-rolled codec
+syn = { version = "2", default-features = false, features = ["parsing", "printing", "full", "visit"] }
+proc-macro2 = { version = "1", features = ["span-locations"] }
+quote = "1"
+tempfile = "3"
+
+[profile.release]
+lto = "thin"

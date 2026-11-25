@@ -1,0 +1,12 @@
+[package]
+name = "halmi-lex"
+description = "Shared lexer toolkit and metrics collection for halmi language adapters"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[dependencies]
+halmi-core = { path = "../halmi-core" }
